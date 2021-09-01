@@ -38,17 +38,3 @@ npm run lint
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
 
-### Configuring Sanity
-If you're running your own Sanity project with the example movie dataset and feel like running this example with your own data, go to `src/sanity.js` and change the following two lines:
-
-```
-projectId: 'YOUR_PROJECT_ID',
-dataset: 'YOUR_DATASET_NAME' <-- 'production' if you just went with the default
-```
-
-You can locate the ID of your project in the header of the [management page for your project](https://manage.sanity.io/).
-You also need to enable `localhost:8080` in your CORS Origins settings! Either through the [management page](https://manage.sanity.io/) under `settings` or by running this in the project folder you set up with `sanity init`:
-
-  > sanity cors add http://localhost:8080
-
-For a more detailed explanation on how this example works, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
